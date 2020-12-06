@@ -1,0 +1,6 @@
+development:
+  theme_id: "93213720715"
+  store: themodernplant.myshopify.com
+staging:
+  theme_id: "115798147224"
+  store: themodernplant.myshopify.com
