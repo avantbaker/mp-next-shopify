@@ -1,0 +1,38 @@
+.bottle-images {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    &__image-wrapper {
+        position: absolute;
+        width: 20rem;
+        
+        &--top-right {
+            top: -35%;
+            right: 0;
+            img {
+                transform: rotate(-45deg) 
+            }
+            @include desktop-below {
+                top: -18rem;
+                width: 14rem;
+                img {
+                    transform: rotate(-45deg) translateX(15%) translateY(15%);
+                }
+            }
+        }
+        &--bottom-left {
+            bottom: -35%;
+            left: 20%;
+            img {
+                transform: rotate(45deg) 
+            }
+            @include desktop-below {
+                display: none;
+            }
+        }
+    }
+}

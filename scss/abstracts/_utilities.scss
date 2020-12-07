@@ -1,0 +1,110 @@
+.responsive-img {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.my-xxl {
+    margin: $margin-xxl 0;
+}
+
+.mb-xxl {
+    margin-bottom: $margin-xxl !important;
+}
+
+.mb-xl {
+    margin-bottom: $margin-xl !important;
+}
+
+.mb-lg {
+    margin-bottom: $margin-lg !important;
+}
+
+.mb-md {
+    margin-bottom: $margin-md !important;
+}
+
+.mb-sm {
+    margin-bottom:  $margin-sm !important;
+}
+
+.mb-xs {
+    margin-bottom:  $margin-xs !important;
+}
+
+.bg-color-primary, .bg-cherry-wine {
+    background-color: $color-primary !important;
+}
+.bg-color-secondary, .bg-desert-sage {
+    background-color: $color-secondary !important;
+}
+.bg-color-tertiary,
+.bg-copy-of-desert-sage,
+.bg-holy-lavender,
+.bg-modern-plant-box-w-free-dna-test {
+    background-color: $color-tertiary !important;
+}
+.bg-color-quartenary, .bg-custom-blend {
+    background-color: $color-brand-dark !important;
+}
+
+.text-color-white {
+    color: $color-white !important;
+}
+
+.text-color-primary {
+    color: $color-primary !important;
+}
+.text-color-secondary {
+    color: $color-secondary !important;
+}
+.text-color-tertiary {
+    color: $color-tertiary !important;
+}
+.text-color-quartenary {
+    color: $color-brand-dark !important;
+}
+
+.text-color-brand {
+    color: $color-brand !important;
+}
+.text-color-brand--dark {
+    color: $color-brand-dark !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
+.opacity-on-hover {
+    transition: all 0.25s;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+::disabled {
+    opacity: 0.2;
+}

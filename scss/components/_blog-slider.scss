@@ -1,0 +1,24 @@
+.blog-slider {
+    
+    padding-bottom: 15rem;
+
+    .row {
+        flex-direction: column;
+    }
+    .container-fluid {
+        padding: 0;
+        margin-right: 15rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .spacer {
+        color: white;
+        width: 20%;
+        height: 100%;
+    }
+}

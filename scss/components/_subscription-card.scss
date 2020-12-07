@@ -1,0 +1,34 @@
+.subscription-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    &__img {
+        min-height: 25rem;
+        width: 100%;
+        background-position: center center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border: 2px solid $color-grey-light;
+
+        &--secondary {
+            background-size: cover;
+        }
+    }
+
+    &__content {
+        padding: 40px;
+        height: 100%;
+        background-color: $color-grey-light;
+    }
+
+}
