@@ -1,0 +1,158 @@
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &--remedies {
+        justify-content: flex-end;
+        @include phone {
+            justify-content: center;
+        }
+    }
+    &__content {
+
+        margin-top: 10rem;
+        width: 80%;
+        position: relative;
+
+        @include tablet {
+            margin-top: 2rem;
+        }
+        @include phone {
+            padding-top: 4rem;
+        }
+        & >:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__paragraph {
+        width: 60%;
+        margin-bottom: 6rem !important;
+    }
+    
+    &__background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__fingerprint {
+        z-index: -1;
+        position: absolute;
+        top: -5%;
+        right: -35%;
+
+        @include tablet {
+            display:none;
+        }
+    }
+    
+    
+    &__remedy-details {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10rem;
+        padding-left: 8rem;
+
+        &__logo-container {
+            max-width: 12rem;
+            padding-bottom: 5rem
+        }
+        
+        &__logo {
+            width: 100%;
+        }
+
+        @include desktop {
+            padding-left: 0;
+
+            &__logo-container {
+                padding-top: 20rem;
+                padding-bottom: 0;
+            }
+            &__logo {
+                display: none;
+            }
+        }
+
+        @include phone-short {
+            display: none
+        }
+
+        @include phone {
+            padding: 0 3.5rem 3.5rem 3.5rem; 
+            flex-direction: row;
+        }
+
+    }
+
+    &__remedy-name {
+        display: flex; 
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 20%;
+        text-align: right;
+        max-width: 70%;
+
+        @include desktop {
+            padding-right: 0;
+            justify-content: center;
+        }
+
+        @include phone {
+            max-width: 50%;
+            text-align: center;
+            &__title {
+                margin-top: -60%;
+                line-height: calc(100vh / 9.5);
+                font-size: calc(100vh / 9.5);
+            }
+        }
+    }
+} 
+
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    &__center-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+
+        &--bottle {
+            top: 53%;
+            max-width: 18rem;
+        }
+
+        @include phone {
+            &--bottle {
+                top: 58%;
+                max-width: calc(100vh / 5);
+            }
+        }
+    }
+
+    &__bottom-right-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__button-container {
+        padding: 4rem;
+    }
+
+}

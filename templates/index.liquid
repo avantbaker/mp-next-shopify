@@ -1,4 +1,226 @@
 <!-- /templates/index.liquid -->
-<div class="index-sections" data-sections-wrapper>
-  {{ content_for_index }}
+<div class="page-container page-home" style="opacity: 1">
+	<div class="split-hero">
+		<div class="split-hero__left">
+			<div
+				class="hero-background"
+				style="background-image: url({{ 'eyeinleaves.jpg' | asset_url }})"
+			></div>
+		</div>
+		<div class="split-hero__right">
+			<div class="hero-content">
+				<div class="hero-content__content">
+					<div class="hero-content__background">
+						<div class="hero-content__fingerprint">
+							<img
+								class="responsive-img"
+								src="{{ 'fingerprint-grey.png' | asset_url }}"
+								alt="fingerprint-grey"
+							/>
+						</div>
+					</div>
+					<div class="heading-1">Optimize Immunity &amp; Energy</div>
+					<h6 class="heading-6--caps">Terpene Remedies that will change your health!</h6>
+					<h5 class="heading-5 hero-content__paragraph">
+						Traditional apothecary remedies, refined- and with a modern spin.
+					</h5>
+					<button type="button" class="btn btn-primary heading-6 undefined">
+						Learn More
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="blue-band">
+		<div class="blue-band__background">
+			<div class="container _80">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="section-content">
+							<div class="section-content__stamp-wrapper">
+								<div class="section-content__stamp">
+									<img
+										class="section-content__stamp-img"
+										src="{{ 'stamp-black.png' | asset_url }}"
+										alt="Black Stamp"
+									/>
+								</div>
+							</div>
+							<div class="section-content__content">
+								<h2 class="heading-2 mb-xl">Protected plant properties.</h2>
+								<h5 class="heading-5 mb-lg">
+									Custom Terpene Blends Formulated Just For You!
+								</h5>
+								<p class="paragraph">
+									Terpenes possess very important antiviral compounds that offer a number
+									of health benefits that fight off many common illnesses such as cold,
+									flu, stomach issues, and more. Our perfectly crafted terpene cocktails
+									have the highest amount of nutrients that your genotypes have shown to
+									benefit from.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 relative w-100">
+						<div class="bottle-images">
+							<div
+								class="bottle-images__image-wrapper bottle-images__image-wrapper--top-right"
+							>
+								<img
+									src="{{ 'modern-bottle-white.png' | asset_url }}"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+							<div
+								class="bottle-images__image-wrapper bottle-images__image-wrapper--bottom-left"
+							>
+								<img
+									src="{{ 'modern-bottle-white.png.png' | asset_url }}"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="dual-cards container _80 p-0">
+		<div class="row">
+			<div class="dual-cards__card col-xs-12 col-md-6">
+				<div class="big-card">
+					<div
+						class="big-card__featured-img"
+						style="background-image: url({{ 'homepagemodernmethods.jpg' | asset_url }})"
+					></div>
+					<div class="big-card__content">
+						<h6 class="heading-6--caps big-card__content-title">
+							Checkout how our system works
+						</h6>
+						<h2 class="heading-2 box-title">
+							<div class="box-title__title">Modern Methods</div>
+						</h2>
+						<button type="button" class="btn btn-primary heading-6 undefined">
+							Learn The Process
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="dual-cards__card col-xs-12 col-md-6">
+				<div class="big-card">
+					<div
+						class="big-card__featured-img"
+						style="background-image: url({{ 'homepagerefinedremedies.jpg' | asset_url }})"
+					></div>
+					<div class="big-card__content">
+						<h6 class="heading-6--caps big-card__content-title">
+							See our lineup of products
+						</h6>
+						<h2 class="heading-2 box-title">
+							<div class="box-title__title">Refined Remedies</div>
+						</h2>
+						<button type="button" class="btn btn-primary heading-6 undefined">
+							View Our Products
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div
+		class="background-section row"
+		style="background-image: url({{ 'flowersontable.jpg' | asset_url }})"
+	>
+		<div class="background-section__overlay"></div>
+		<div class="background-section__container col-xs-12">
+			<div class="background-section__content">
+				<h3 class="heading-3 background-section__title mb-xl">
+					Your Wellness Answers Start Here
+				</h3>
+				<p class="paragraph background-section__details mb-xl">
+					Don't sleep on your DNA. Let's find out what the right terpene blends are for
+					you. Your custom blend will adapt over the course of your membership and
+					engagement in the program.
+				</p>
+				<div class="background-section__button mb-xl">
+					<button type="button" class="btn btn-secondary heading-6 undefined">
+						My Account
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-gallery-section">
+		<div class="grid-gallery-section__container container _80">
+			<svg
+				aria-hidden="true"
+				focusable="false"
+				data-prefix="fab"
+				data-icon="instagram"
+				class="svg-inline--fa fa-instagram fa-w-14 grid-gallery-section__icon heading-2"
+				role="img"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 448 512"
+			>
+				<path
+					fill="currentColor"
+					d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+				></path>
+			</svg>
+			<h3 class="heading-3">More of the good stuff.</h3>
+			<h5 class="heading-5 mb-xxl">Stay Connected. <br />Be A Part of Our Community.</h5>
+		</div>
+		<div class="grid-gallery">
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig1.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig2.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig3.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig4.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig5.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig6.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig7.png' | asset_url }});
+				"
+			></div>
+			<div
+				class="grid-item"
+				style="
+					background-image: url({{ 'ig8.png' | asset_url }});
+				"
+			></div>
+		</div>
+	</div>
 </div>
